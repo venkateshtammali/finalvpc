@@ -1,3 +1,9 @@
+# main.tf
+terraform {
+  required_version = "~> 0.12.0"
+
+  backend "remote" {}
+}
 provider "aws" {
   region     = "ap-south-1"
 }
